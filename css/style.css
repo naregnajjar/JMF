@@ -219,7 +219,7 @@ button {
 .common_btn {
   padding: 17px 38px 16px 25px;
   background: var(--primeryViolet);
-  color: var(--colorBlack);
+  color: var(--colorWhite);
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
@@ -240,7 +240,7 @@ button {
   font-family: "Font Awesome 5 Free";
   font-weight: 600;
   font-size: 14px;
-  color: var(--colorBlack);
+  color: var(--colorWhite);
   top: 50%;
   right: 20px;
   transform: translateY(-50%) rotate(45deg);
@@ -304,7 +304,7 @@ button {
   background: var(--primeryViolet);
   line-height: 84px;
   text-align: center;
-  color: var(--colorBlack);
+  color: var(--colorWhite);
   font-size: 24px;
   position: relative;
   z-index: 9;
@@ -321,6 +321,7 @@ button {
   width: 100%;
   height: 100%;
   background: var(--primeryViolet);
+  color: var(--colorWhite);
   top: 0;
   left: 0;
   border-radius: 50%;
@@ -964,6 +965,7 @@ header .header_info a span {
   -webkit-animation: zoom_animi linear 2s infinite alternate;
 }
 
+/* 
 .banner::before {
   position: absolute;
   content: "";
@@ -977,7 +979,7 @@ header .header_info a span {
   left: 90px;
   z-index: 1;
   opacity: 0.2;
-}
+} */
 
 .banner div {
   height: 100%;
@@ -997,7 +999,7 @@ header .header_info a span {
   position: relative;
 }
 
-.banner_slider_item::after {
+/* .banner_slider_item::after {
   position: absolute;
   content: "";
   background: url("../images/banner_bg_shapes.webp");
@@ -1009,7 +1011,7 @@ header .header_info a span {
   bottom: -2px;
   right: 10px;
   z-index: 1;
-}
+} */
 
 .banner_text {
   display: flex;
@@ -1092,13 +1094,14 @@ header .header_info a span {
   background: var(--colorWhite);
 }
 
+/* 
 .banner .circle_box {
   position: absolute;
   bottom: 125px;
   right: 32%;
   width: 200px;
   height: 200px;
-}
+} */
 
 .banner .circle_box svg {
   font-size: 11px;
@@ -1161,8 +1164,8 @@ header .header_info a span {
 }
 
 .banner .slick-dots li.slick-active button {
-  background: var(--colorPrimary);
-  border: var(--colorPrimary) !important;
+  background: var(--primeryViolet);
+  border: var(--primeryViolet) !important;
 }
 
 .banner .slick-dots li button::after {
@@ -1274,7 +1277,7 @@ header .header_info a span {
 }
 
 .category_item:hover h3 {
-  color: var(--colorPrimary);
+  color: var(--colorWhite);
 }
 
 .category_item:hover .img {
@@ -2193,7 +2196,7 @@ header .header_info a span {
 
 .faq_text .accordion-button:not(.collapsed) {
   color: var(--colorBlack);
-  background-color: var(--colorPrimary);
+  background-color: var(--colorWhite);
   border-bottom: 1px solid #eee;
 }
 
