@@ -80,7 +80,7 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   font-family: var(--paraFont);
-  color: var(--colorWhite);
+  color: var(--Mutedgray);
 }
 
 img {
@@ -963,6 +963,12 @@ header .header_info a span {
   z-index: 1;
   animation: zoom_animi linear 2s infinite alternate;
   -webkit-animation: zoom_animi linear 2s infinite alternate;
+}
+
+.card-img-top {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
 }
 
 /* 
