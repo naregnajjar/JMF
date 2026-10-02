@@ -949,43 +949,12 @@ header .header_info a span {
   position: relative;
 }
 
-.banner::after {
-  position: absolute;
-  content: "";
-  background: url("../images/banner_bg_shapes_2.webp");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100px;
-  height: 78px;
-  top: 270px;
-  left: 160px;
-  z-index: 1;
-  animation: zoom_animi linear 2s infinite alternate;
-  -webkit-animation: zoom_animi linear 2s infinite alternate;
-}
 
 .card-img-top {
   object-fit: contain;
   width: 100%;
   height: auto;
 }
-
-/* 
-.banner::before {
-  position: absolute;
-  content: "";
-  background: url("../images/banner_bg_shapes_3.webp");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 150px;
-  height: 150px;
-  bottom: 0;
-  left: 90px;
-  z-index: 1;
-  opacity: 0.2;
-} */
 
 .banner div {
   height: 100%;
