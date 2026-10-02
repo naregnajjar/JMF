@@ -1855,7 +1855,7 @@ header .header_info a span {
 }
 
 .counter_overlay {
-  background: #0d2420d6;
+  background: var(--colorPrimary);
 }
 
 .counter_item {
