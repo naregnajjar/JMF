@@ -857,7 +857,7 @@ header .header_info a span {
 .main_menu.menu_fix {
   position: fixed;
   top: 0;
-  background: var(--colorBlack);
+  background: var(--colorPrimary);
   z-index: 999;
 }
 
@@ -1867,9 +1867,9 @@ header .header_info a span {
 .counter_item .icon {
   width: 65px;
   height: 65px;
-  border: 1px solid var(--colorPrimary);
+  border: 1px solid var(--primeryViolet);
   padding: 15px;
-  color: var(--colorPrimary);
+  color: var(--primeryViolet);
   margin: 0 auto;
   margin-bottom: 25px;
   border-radius: 50%;
@@ -2543,21 +2543,10 @@ footer {
   overflow: hidden;
 }
 
-footer::before {
-  position: absolute;
-  content: "";
-  width: 150px;
-  height: 420px;
-  background: url(../images/home3_shapes_line.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: 0;
-  left: -5px;
-}
+
 
 .footer_overlay {
-  background: #000000d9;
+  background: #39194D;
 }
 
 .footer_top {
