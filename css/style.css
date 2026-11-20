@@ -84,9 +84,9 @@ body {
 }
 
 img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: all linear 0.3s;
   -webkit-transition: all linear 0.3s;
   -moz-transition: all linear 0.3s;
@@ -477,7 +477,10 @@ button {
   border-color: var(--primeryViolet);
 }
 
-breadcremd start .breadcrumb {
+/* breadcrumb start */
+
+.breadcrumb {
+  background-image: url("../images/breadcrumb_bg.webp");
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
@@ -586,7 +589,7 @@ breadcremd start .breadcrumb {
   -o-border-radius: 50%;
 }
 
-/* breadcremd end */
+/* breadcrumb end */
 
 /* pagination start */
 .pagination ul {
@@ -647,7 +650,7 @@ breadcremd start .breadcrumb {
 }
 
 .form-check-input:checked[type="checkbox"] {
-  --bs-form-check-bg-image: url(../images/checkbox_check.svg) !important;
+  --bs-form-check-bg-image: url("../images/checkbox_check.svg") !important;
 }
 
 /*================================
@@ -974,6 +977,22 @@ header .header_info a span {
   position: relative;
 }
 
+.banner_slider_item.banner_slide_1 {
+  background-image: url("../images/JMF-Projects-Programs/Rehab-cneter-for-children-2.JPG");
+}
+
+.banner_slider_item.banner_slide_2 {
+  background-image: url("../images/JMF-Projects-Programs/Rehab-cneter-for-children-3.jpg");
+}
+
+.banner_slider_item.banner_slide_3 {
+  background-image: url("../images/JMF-Projects-Programs/Rehab-cneter-for-children-4.JPG");
+}
+
+.banner_slider_item.banner_slide_4 {
+  background-image: url("../images/JMF-Projects-Programs/Rehab-cneter-for-children-5.jpg");
+}
+
 /* .banner_slider_item::after {
   position: absolute;
   content: "";
@@ -1092,7 +1111,7 @@ header .header_info a span {
   content: "";
   width: 75px;
   height: 75px;
-  background: url(../images/banner_img_shapes.webp);
+  background: url("../images/banner_img_shapes.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1480,6 +1499,23 @@ header .header_info a span {
 
 /* about us end */
 
+/* reports start  */
+
+.reports-breadcrumb {
+  background-image: url("../images/reports_bg.png");
+}
+
+.reports-text li {
+  list-style: disc;
+}
+
+.reports-text a {
+  color: var(--colorBlack);
+  text-decoration: underline;
+}
+
+/* reports end */
+
 /* campaign start */
 .campaign {
   position: relative;
@@ -1849,6 +1885,7 @@ header .header_info a span {
 
 /* Counter start */
 .counter_section {
+  background-image: url("../images/counter_bg.webp");
   background-position: center !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
@@ -1935,7 +1972,7 @@ header .header_info a span {
   content: "";
   width: 130%;
   height: 300px;
-  background: url(../images/event_text_shapes.webp);
+  background: url("../images/event_text_shapes.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2021,7 +2058,7 @@ header .header_info a span {
 .text_slider .marquee_animi ul li::after {
   position: absolute;
   content: "";
-  background: url(../images/text_slider_icon.webp);
+  background: url("../images/text_slider_icon.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -2046,6 +2083,7 @@ header .header_info a span {
 
 /* Become volunteer start */
 .become_volunteer_bg {
+  background-image: url("../images/become_volanteer_bg.webp");
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
@@ -2087,6 +2125,7 @@ header .header_info a span {
 
 /* Volanteer start */
 .volunteer {
+  background-image: url("../images/volunteer_bg.webp");
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
@@ -2176,7 +2215,7 @@ header .header_info a span {
 }
 
 .faq_text .accordion-button::after {
-  background-image: url(../images/plus_icon.webp);
+  background-image: url("../images/plus_icon.webp");
   width: 13px;
   height: 13px;
   background-position: center;
@@ -2185,7 +2224,7 @@ header .header_info a span {
 }
 
 .faq_text .accordion-button:not(.collapsed)::after {
-  background-image: url(../images/minus_icon.webp);
+  background-image: url("../images/minus_icon.webp");
 }
 
 .faq_text .accordion-body p {
@@ -2216,6 +2255,22 @@ header .header_info a span {
   -o-transition: all linear 0.3s;
 }
 
+.donors-partners-slider .single_brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+
+.donors-partners-slider .single_brand img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
 .single_brand:hover {
   border-color: var(--colorPrimary);
 }
@@ -2228,6 +2283,14 @@ header .header_info a span {
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
+}
+
+.video_and_donate {
+  background-image: url("../images/donation_video_bg.webp");
+}
+
+.study-tour-background {
+  background-image: url("../images/Banner_2400X800_Study Tour.png");
 }
 
 .video_and_donate_overlay,
@@ -2453,7 +2516,7 @@ header .header_info a span {
 .testimonial_item::after {
   position: absolute;
   content: "";
-  background: url(../images/quot_icon.webp);
+  background: url("../images/quot_icon.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2536,14 +2599,14 @@ header .header_info a span {
 
 /* footer start */
 footer {
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
   position: relative;
   overflow: hidden;
 }
 
-
+.footer-white {
+  background-image: none;
+  background-color: white;
+}
 
 .footer_overlay {
   background: #39194D;
@@ -3101,7 +3164,7 @@ footer {
   content: "";
   width: 100%;
   height: 100%;
-  background: url(../images/about_mask_img.webp);
+  background: url("../images/about_mask_img.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3383,7 +3446,7 @@ footer {
   content: "";
   width: 100%;
   height: 100%;
-  background: url(../images/home_2_bg_shapes.webp);
+  background: url("../images/home_2_bg_shapes.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3493,7 +3556,7 @@ footer {
 .testimonial_2_bg::after {
   position: absolute;
   content: "";
-  background: url(../images/testimonial_bg.webp);
+  background: url("../images/testimonial_bg.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3699,7 +3762,7 @@ footer {
   content: "";
   width: 150px;
   height: 150px;
-  background: url(../images/footer_2_banner_love.webp);
+  background: url("../images/footer_2_banner_love.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3817,7 +3880,7 @@ footer {
   content: "";
   width: 130px;
   height: 130px;
-  background: url(../images/banner_bg_shapes.webp);
+  background: url("../images/banner_bg_shapes.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -4021,7 +4084,7 @@ footer {
   content: "";
   width: 100%;
   height: 50px;
-  background: url(../images/banner_wave_shapes.svg);
+  background: url("../images/banner_wave_shapes.svg");
   background-position: center;
   background-repeat: no-repeat !important;
   background-size: cover;
@@ -4039,7 +4102,7 @@ footer {
   content: "";
   width: 180px;
   height: 505px;
-  background: url(../images/home3_shapes_line.png);
+  background: url("../images/home3_shapes_line.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4052,7 +4115,7 @@ footer {
   content: "";
   width: 180px;
   height: 105px;
-  background: url(../images/home3_shapes_hand1.png);
+  background: url("../images/home3_shapes_hand1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -5324,7 +5387,7 @@ footer {
 .details_quot_text::after {
   position: absolute;
   content: "";
-  background: url(../images/blog_det_quot.webp);
+  background: url("../images/blog_det_quot.webp");
   width: 50px;
   height: 40px;
   top: 45px;
@@ -6037,6 +6100,53 @@ footer {
 ===========================*/
 
 /*===========================
+    Our People start
+===========================*/
+
+.our-people-breadcrumb {
+  background-image: url("../images/our-people-bg.webp");
+ }
+
+
+.our-people-text li {
+  list-style: disc;
+
+}
+
+/*===========================
+    Our People end
+===========================*/
+
+/*===========================
+    Our history start
+===========================*/
+
+.our-history-breadcrumb {
+  background-image: url("../images/our-history-bg.webp");
+}
+
+
+.our_history_text p {
+  margin-top: 20px;
+  line-height: 28px;
+}
+
+
+.our_history_text ul li {
+  list-style: disc;
+}
+
+.our_history_text ul li,
+.our_history_text ol li {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/*===========================
+    Our history end
+===========================*/
+
+/*===========================
     Event details start
 ===========================*/
 .event_sidebar ul {
@@ -6560,6 +6670,19 @@ footer {
 
 /*===========================
    Donor list end
+===========================*/
+
+
+/*===========================
+   Donor and partners start
+===========================*/
+
+.donors-and-partners-breadcrumb {
+  background-image: url("../images/our-donors-and-partners-bg.webp");
+}
+
+/*===========================
+   Donor and partners end
 ===========================*/
 
 /*===========================
