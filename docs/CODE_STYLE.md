@@ -259,30 +259,10 @@ Use blank lines to group logically related code.
 
 # CSS
 
-- Group CSS properties by their effect:
-  1. Positioning.
-  2. Display and layout.
-  3. Spacing.
-  4. Typography.
-  5. Everything else.
-
-```css
-position: relative;
-z-index: 10;
-overflow: hidden;
-
-display: flex;
-align-items: baseline;
-width: 100%;
-padding: 40px 35px;
-
-font-size: 13px;
-line-height: 15px;
-color: tomato;
-
-border: 1px solid #ffffff;
-background: green;
-```
+- CSS property order is managed by `postcss-sorting` using
+  [`postcss.config.cjs`](../tools/postcss-sorting/postcss.config.cjs).
+- The pre-commit hook sorts changed non-minified CSS files. To sort a file
+  manually, run `npm run sort:css -- path/to/file.css`.
 
 - Use BEM for global modules.
 - Do not use BEM for local modules.
