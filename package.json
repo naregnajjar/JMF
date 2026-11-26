@@ -1,0 +1,26 @@
+{
+  "name": "jmf",
+  "private": true,
+  "scripts": {
+    "prepare": "husky",
+    "format": "prettier --write \"**/*.{html,css,js,jsx,ts,tsx,json,md}\"",
+    "format:check": "prettier --check \"**/*.{html,css,js,jsx,ts,tsx,json,md}\"",
+    "lint": "npm --prefix web run lint && npm --prefix studio run lint",
+    "sort:css": "postcss --config tools/postcss-sorting --no-map --replace",
+    "check": "npm run format:check && npm run lint"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "postcss": "^8.5.33",
+    "postcss-cli": "^11.0.1",
+    "postcss-sorting": "^10.0.0",
+    "prettier": "^3.6.2"
+  },
+  "lint-staged": {
+    "**/!(*.min).css": "postcss --config tools/postcss-sorting --no-map --replace",
+    "**/*.{html,css,js,jsx,ts,tsx,json,md}": "prettier --write",
+    "web/**/*.{js,jsx,ts,tsx}": "npm --prefix web run lint -- --fix",
+    "studio/**/*.{js,jsx,ts,tsx}": "npm --prefix studio run lint -- --fix"
+  }
+}
